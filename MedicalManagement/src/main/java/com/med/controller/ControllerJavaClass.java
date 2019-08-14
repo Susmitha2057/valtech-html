@@ -20,9 +20,18 @@ public class ControllerJavaClass {
 		return "admin";
 	}
 	
-	@RequestMapping("/complicants")
-	String complication() {
-		return "complicants";
+	@RequestMapping("/logout")
+	String logout() {
+		return "patient";
 	}
 	
+	@RequestMapping("/doctorLogout")
+	String doctorLogout() {
+		return "doctor";
+	}
+	
+	@RequestMapping("/adminLogout")
+	String adminLogout() {
+		return "admin";
+	}
 }

@@ -33,12 +33,16 @@
     	<form action="PersonalDetails" method="post">
         <button id="btn" onclick="location.href='personalDetails'">PERSONAL DETAILS</button><br>
         </form>
+        <form action="complicant" method="post">
         <button id="btn" onclick="location.href='complicants'">COMPLICANTS</button><br>
+        </form>
         <form action="PatientReport" method="post"> 
         <button id="btn" type="submit">PATIENT'S REPORT</button><br>
         </form>
         <button id="btn" onclick="location.href='response'">RESPONSE FROM DOCTOR</button><br>
+        <form action="logout" method="post">
         <button id="btn" onclick="location.href='HomePage'">LOGOUT</button><br>
+        </form>
     </div>
 
 </body>

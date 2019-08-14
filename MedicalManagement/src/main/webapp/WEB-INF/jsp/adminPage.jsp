@@ -29,8 +29,12 @@
 </head>
 
 <body>
-        <button id="btn" onclick="location.href='viewLogs.jsp'">VIEW LOGS</button><br>
-        <button id="btn" onclick="location.href='HomePage.jsp'">LOGOUT</button><br>
+		<form action="viewLogs" method="post">
+        <button id="btn" type="submit" onclick="location.href='viewLogs'">VIEW LOGS</button><br>
+        </form>
+        <form action="adminLogout" method="post">
+        <button id="btn" onclick="location.href='HomePage'">LOGOUT</button><br>
+        </form>
 </body>
 
 </html>

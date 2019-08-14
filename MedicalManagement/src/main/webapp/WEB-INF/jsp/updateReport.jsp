@@ -18,39 +18,35 @@
 </head>
 
 <body>
-    <h1>REGISTER FOR APPOINTMENT</h1>
+<form action="updateProcess" method="post">
+    <h1>UPDATE PATIENT REPORT</h1>
 
     <table class="center">
         <tr>
             <td>PATIENT'S ID</td>
             <td>
-                <input id="p_id" type="text" required>
+                <input name="patientid" id="p_id" type="number" required>
             </td>
         </tr>
         <tr>
             <td>DOCTOR'S ID</td>
             <td>
-                <input id="d_id" type="text" required>
-            </td>
-        </tr>
-        <tr>
-            <td>DATE</td>
-            <td>
-                <input id="date" type="date" required>
+                <input name="doctorid" id="d_id" type="number" required>
             </td>
         </tr>
         <tr>
             <td>PRESCRIPTION</td>
             <td>
-                <input id="prescription" type="text" required>
+                <input name="prescription" id="prescription" type="text" required>
             </td>
         </tr>
         <tr>
             <td> &nbsp; </td>
             <td>
-                <button id="submitBtn" type="submit" onclick="location.href='doctorPage.jsp'">SUBMIT</button>
+                <button id="submitBtn" type="submit" onclick="location.href='doctorPage'">SUBMIT</button>
             </td>
         </tr>
     </table>
+</form>
 </body>
 </html>

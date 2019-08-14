@@ -30,10 +30,16 @@
 
 <body>
     <div class="container">
-        <button id="btn" onclick="location.href='docPersonalDetails.jsp'">PERSONAL DETAILS</button><br>
-        <button id="btn" onclick="location.href='updateReport.jsp'">UPDATE PATIENT'S REPORT</button><br>
-        <button id="btn" onclick="location.href='patientRequest.jsp'">PATIENT'S REQUEST</button><br>
-        <button id="btn" onclick="location.href='HomePage.jsp'">LOGOUT</button><br>
+        <button id="btn" onclick="location.href='docPersonalDetails'">PERSONAL DETAILS</button><br>
+        <form action="updateReport" method="post">
+        <button id="btn" type="submit" onclick="location.href='updateReport'">UPDATE PATIENT'S REPORT</button><br>
+        </form>
+        <form action="patientRequest" method="post">
+        <button id="btn" type="submit" onclick="location.href='patientRequest'">PATIENT'S REQUEST</button><br>
+        </form>
+        <form action="doctorLogout" method="post">
+        <button id="btn" type="submit" onclick="location.href='HomePage'">LOGOUT</button><br>
+        </form>
     </div>
 </body>
 

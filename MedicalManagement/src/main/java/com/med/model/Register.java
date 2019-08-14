@@ -3,7 +3,7 @@ package com.med.model;
 public class Register {
 
 	 String userName,password,email,city,state;
-	 //LocalDate DOB;
+	
 	 int phoneno;
 	
 	public String getUserName() {
@@ -36,13 +36,7 @@ public class Register {
 	public void setState(String state) {
 		this.state = state;
 	}
-//	public LocalDate getDOB() {
-//		return DOB;
-//	}
-//	public void setDOB(String dOB) {
-//		LocalDate date = LocalDate.parse((CharSequence) dOB);
-//		DOB = date;
-//	}
+
 	public int getPhoneno() {
 		return phoneno;
 	}

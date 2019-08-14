@@ -1,16 +1,17 @@
 package com.med.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -88,7 +89,6 @@ public class LoginController {
 		modelAndView.addObject("message", "Username or password invalid");
 		return modelAndView;
 	}
-
 }
 
 

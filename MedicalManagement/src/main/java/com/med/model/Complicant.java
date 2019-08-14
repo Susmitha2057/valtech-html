@@ -2,19 +2,27 @@ package com.med.model;
 
 public class Complicant {
 
-	int id;
-	String name,complicant,doctorName;
+	int id,doctorId;
+	
+	String uname,complicant,doctorName;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	
+	public String getUname() {
+		return uname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUname(String uname) {
+		this.uname = uname;
+	}
+	public int getDoctorId() {
+		return doctorId;
+	}
+	public void setDoctorId(int doctorId) {
+		this.doctorId = doctorId;
 	}
 	public String getComplicant() {
 		return complicant;
@@ -30,8 +38,10 @@ public class Complicant {
 	}
 	@Override
 	public String toString() {
-		return "Complicant [id=" + id + ", name=" + name + ", complicant=" + complicant + ", doctorName=" + doctorName
-				+ "]";
+		return "Complicant [id=" + id + ", doctorId=" + doctorId + ", uname=" + uname + ", complicant=" + complicant
+				+ ", doctorName=" + doctorName + "]";
 	}
+	
+	
 	
 }

@@ -15,7 +15,7 @@ public class ComplicantImpl {
 			try {
 				statement = (Statement) conn.createStatement();
 				System.out.println(compli.getId());
-				String sql = "Insert into complicant(p_id,p_username,d_username,complication) values ("+compli.getId()+","+compli.getName()+",'"+compli.getComplicant()+"','"+compli.getDoctorName()+"')";
+				String sql = "Insert into complicant(p_id,p_username,d_id,d_username,complication) values ("+compli.getId()+",'"+compli.getUname()+"',"+compli.getDoctorId()+",'"+compli.getDoctorName()+"','"+compli.getComplicant()+"')";
 				statement.executeUpdate(sql);
 				return true;
 
@@ -26,4 +26,3 @@ public class ComplicantImpl {
 			}
 		}
 	}
-

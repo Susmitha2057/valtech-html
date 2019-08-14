@@ -25,7 +25,7 @@
         <tr>
             <td>ID</td>
             <td>
-                <input name="id" id="nameip" type="text" required>
+                <input name="id" id="nameip" type="number" required>
             </td>
         </tr>
         <tr>
@@ -44,6 +44,12 @@
             <td>Choose doctor</td>
             <td>
                 <input name="doctorName" id="docip" type="text" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter doctor id</td>
+            <td>
+                <input name="doctorId" id="docid" type="number" required>
             </td>
         </tr>
         <tr>

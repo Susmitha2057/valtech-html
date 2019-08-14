@@ -70,8 +70,8 @@ title="Enter a date in this format YYYY-MM-DD"/>
                 <button id="registerbtn" type="submit">Register</button>
             </td>
         </tr>
-        <p>${message}</p>
     </table>
+    <h2 align="center">${message}</h2>
 </form>
 </body>
 </html>

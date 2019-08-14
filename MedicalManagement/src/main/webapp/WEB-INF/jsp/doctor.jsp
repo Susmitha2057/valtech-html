@@ -34,10 +34,11 @@
         <tr>
             <td> &nbsp; </td>
             <td> 
-                <button id="submitBtn" type="submit" onclick="location.href='doctorPage'">Login</button>
+                <button id="submitBtn" type="submit">Login</button>
             </td>
         </tr>
     </table>
+    <h3 align="center">${message}</h3>
 </form>
 </body>
 </html>
